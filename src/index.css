@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "animate.css";
+
+:root {
+  direction: rtl;
+  font-family: iransharp, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background: #fdcda7;
+  background: radial-gradient(
+    circle,
+    rgba(253, 205, 167, 1) 0%,
+    rgba(44, 40, 34, 1) 100%
+  );
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "iransharp";
+  src: url("./assets/fonts/iransharp_light_web.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
