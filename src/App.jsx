@@ -1,5 +1,15 @@
 import { useState, useEffect } from "react";
-import { espresson, hotBar, iceCoffee, shakes } from "./data/data.js";
+import {
+  espresson,
+  hotBar,
+  iceCoffee,
+  shakes,
+  teas,
+  moctails,
+  breakfast,
+  food,
+  cake,
+} from "./data/data.js";
 import Container from "./components/Container.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
@@ -32,7 +42,12 @@ function App() {
       <Header />
 
       <main style={{ textAlign: "center", padding: "20px" }}>
-        <p className="text-orange-200" style={{ fontSize: "20px", minHeight: "30px" }}>{text}</p>
+        <p
+          className="text-orange-200"
+          style={{ fontSize: "20px", minHeight: "30px" }}
+        >
+          {text}
+        </p>
       </main>
 
       <section>
@@ -40,6 +55,11 @@ function App() {
         <Container data={hotBar} title={"بار گرم"} />
         <Container data={iceCoffee} title={"سرد بار"} />
         <Container data={shakes} title={"شیک ها"} />
+        <Container data={teas} title={"گرم نوش"} />
+        <Container data={moctails} title={"سرد نوش "} />
+        <Container data={cake} title={"کیک و دسر"} />
+        <Container data={breakfast} title={"صبحانه"} />
+        <Container data={food} title={"عصرانه"} />
       </section>
 
       <Footer />
