@@ -34,7 +34,8 @@ function AnimatedCard({ children, animation = "animate__fadeInUp" }) {
       style={{
         opacity: visible ? 1 : 0,
         transition: "opacity 0.3s ease-in-out",
-      }}>
+      }}
+    >
       {children}
     </div>
   );
@@ -49,7 +50,7 @@ export default function Container({ data, title }) {
       </h1>
 
       {/* Cards grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-5 text-center">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-5 text-center">
         {data.map((item, index) => (
           <AnimatedCard key={index} animation="animate__zoomIn">
             <div className="drop-shadow-2xl shadow-2xl shadow-black rounded-2xl">
