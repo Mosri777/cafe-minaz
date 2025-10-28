@@ -55,7 +55,7 @@ export default function Container({ data, title }) {
           <AnimatedCard key={index} animation="animate__zoomIn">
             <div className="drop-shadow-2xl shadow-2xl shadow-black rounded-2xl">
               <img
-                className="w-[22rem] h-[22rem] rounded-3xl mx-auto"
+                className="w-md-[22rem] h-md-[22rem] w-[22rem] h-[12rem] rounded-3xl mx-auto"
                 src={item.img}
                 alt={item.name}
               />
